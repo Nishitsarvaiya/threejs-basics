@@ -1,4 +1,13 @@
+/**
+ * a Class for creating the Resizer
+ */
 class Resizer {
+	/**
+	 *
+	 * @param {HTMLDivElement} container
+	 * @param {PerspectiveCamera} camera
+	 * @param {WebGLRenderer} renderer
+	 */
 	constructor(container, camera, renderer) {
 		// Set the camera's aspect ratio
 		camera.aspect = container.clientWidth / container.clientHeight;

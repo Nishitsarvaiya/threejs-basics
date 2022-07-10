@@ -12,11 +12,5 @@ function main() {
 	world.render();
 }
 
-const button = document.querySelector('.btn-enter');
-
-button.addEventListener('click', () => {
-	// call main to start the app
-	main();
-	document.getElementById('scene').style.display = 'block';
-	button.style.display = 'none';
-});
+// call main to start the app
+main();

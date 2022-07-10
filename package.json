@@ -1,17 +1,18 @@
 {
-  "name": "threejs-basics",
-  "version": "1.0.0",
-  "description": "Three.js Basics",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Nishit Sarvaiya",
-  "license": "ISC",
-  "dependencies": {
-    "three": "^0.142.0"
-  },
-  "devDependencies": {
-    "parcel": "^2.6.2"
-  }
+	"name": "threejs-basics",
+	"version": "1.0.0",
+	"description": "Three.js Basics",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "npx parcel src/index.html"
+	},
+	"author": "Nishit Sarvaiya",
+	"license": "ISC",
+	"dependencies": {
+		"three": "^0.142.0"
+	},
+	"devDependencies": {
+		"parcel": "^2.6.2"
+	}
 }

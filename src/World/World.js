@@ -1,6 +1,9 @@
-import { createCamera, createScene, createCube } from './components';
+import { createCamera, createScene, createCube, createLight } from './components';
 import { createRenderer, Resizer } from './systems';
 
+/**
+ * a Class representing the World
+ */
 class World {
 	#camera;
 	#scene;
@@ -12,11 +15,9 @@ class World {
 		this.#renderer = createRenderer();
 		container.append(this.#renderer.domElement);
 
-		const cube = createCube(2, 2, 2);
-		this.#scene.add(cube);
-		const cube2 = createCube(1, 1, 1, '#3300ff', true);
-		cube2.position.set(3, 2, 5);
-		this.#scene.add(cube2);
+		const cube = createCube(2, 2, 2, 'white');
+		const light = createLight('#ffffff', 4);
+		this.#scene.add(cube, light);
 
 		const resizer = new Resizer(container, this.#camera, this.#renderer);
 	}

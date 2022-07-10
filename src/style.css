@@ -20,19 +20,3 @@ body {
 	right: 0;
 	background-color: #181818;
 }
-
-.btn-enter {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	border: 2px solid #ffffff;
-	background: transparent;
-	color: #ffffff;
-	font-family: 'Roboto Mono';
-	font-size: 0.875rem;
-	letter-spacing: 1px;
-	padding: 0.5rem 3rem;
-	text-transform: uppercase;
-	cursor: pointer;
-}
